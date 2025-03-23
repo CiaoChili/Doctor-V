@@ -18,6 +18,8 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition on scroll */
         }
 
         .navbar a {
@@ -25,14 +27,15 @@
             display: block;
             color: white;
             padding: 14px 20px;
-            text-align: center;
+            text-align: left;
             text-decoration: none;
         }
 
         .navbar a:hover {
-            color: black;
-            
+            background: rgba(255, 255, 255, 0.2); /* Hover background */
+            transform: scale(1.1); /* Slightly enlarge on hover */
         }
+
 
         /* Main Content */
         .header {
