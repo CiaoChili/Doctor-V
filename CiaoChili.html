@@ -11,28 +11,49 @@
             background-color: #f4f4f4;
         }
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Navbar</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: left;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover { background: #555; }
+        section { padding: 100px 20px; background: #f4f4f4; margin: 20px 0; }
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">BLOG</a>
+        <a href="#contact">SERVIZI</a>
+        <a href="#contact">CiaoChili</a>
+        <a href="#contact">Fondazione CiaoChili</a>
+    </div>
 
-    <!-- Sticky Navbar -->
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#ABOUT">About</a></li>
-                <li><a href="#BLOG">Services</a></li>
-                <li><a href="#SERVIZI">Contact</a></li>
-                <li><a href="#CiaoChili">Contact</a></li>
-                <li><a href="#Fondazione CiaoChili">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="home"><h1>HOME</h1></section>
+    <section id="about"><h1>ABOUT</h1></section>
+    <section id="services"><h1>BLOG</h1></section>
+    <section id="contact"><h1>SERVIZI</h1></section>
+    <section id="contact"><h1>CiaoChili</h1></section>
+    <section id="contact"><h1>Fondazione CiaoChili</h1></section>
+</body>
+</html>
 
 
 
